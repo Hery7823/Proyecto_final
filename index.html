@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, minimum-scale=1.0">
+    <link rel="shortcut icon" href="/img/academi.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="/estilos/style.css">
+    <title>Bienvenido_Clase_14</title>
+</head>
+<body>
+  <div class="top">
+    <img src="/img/academia.png" alt="logo academia" />
+    <h1>Clase Catorce</h1>
+    <h2>!Bienvenidos!</h2>
+    <h3>Tema: Arrays</h3>
+    <nav>
+      <ul class="menu">
+        <li><a href="index.html" >inicio</a></li>
+        <li><a href="ejercicio1.html" >Ejercicio N° 1</a></li>
+        <li><a href="ejercicio2.html" >Ejercicio N° 2</a></li>
+        <li><a href="ejercicio3.html" >Ejercicio N° 3</a></li>
+        <li><a href="ejercicio4.html" >Ejercicio N° 4</a></li>
+        <li><a href="ejercicio5.html" >Ejercicio N° 5</a></li>
+        <li><a href="ejercicio6.html" >Ejercicio N° 6</a></li>  
+        <li><a href="ejercicio7.html">Ejercicio N° 7</a></li>   
+        <li><a href="ejercicio8.html">Ejercicio N° 8</a></li> 
+        <li><a href="ejercicio9.html">Ejercicio N° 9</a></li>  
+      </ul>
+    </nav>
+  </div>
+  <div id="top1">
+
+    <nav id="navbar">
+        <header>Documentacion Arrays</header>
+        <ul>
+          <li><a class="nav-link" href="#Introduction">Descripcion</a></li>
+          <li>
+            <a class="nav-link" href="#Operaciones_habituales"
+              >Operaciones habituales</a
+            >
+          </li>
+          <li>
+            <a class="nav-link" href="#Acceso_a_elementos_de_un_array">Acceso a elementos de un array</a>
+          </li>
+          <li><a class="nav-link" href="#Relación_entre_length_y_las_propiedades_numéricasv">Relación entre lengt y las propiedades numéricas</a></li>
+          <li><a class="nav-link" href="#Creación_de_un_array_a_partir_de_una_expresión_regular">Creación de un array a partir de una expresión regular</a></li>
+          <li>
+            <a class="nav-link" href="#Declaracion_de_variables">Declaracion de variables</a>
+          </li>
+     
+         
+          <li><a class="nav-link" href="#referencia">Referencia</a></li>
+          <li><a class="nav-link" href="#Data_types">Data types</a></li>
+          <li>
+            <a class="nav-link" href="#if...else_statement">if...else statement</a>
+          </li>
+          <li><a class="nav-link" href="#while_statement">while statement</a></li>
+          <li>
+            <a class="nav-link" href="#Function_declarations"
+              >Function declarations</a
+            >
+          </li>
+          <li><a class="nav-link" href="#Reference">Reference</a></li>
+        </ul>
+      </nav>
+      <main id="main-doc">
+        <section class="main-section" id="Introduction">
+          <header>Descripcion</header>
+          <article>
+            <p>
+              Los arrays son objetos similares a una lista cuyo prototipo proporciona métodos para efectuar operaciones de recorrido y de mutación. Tanto la longitud como el tipo de los elementos de un array son variables. Dado que la longitud de un array puede cambiar en cualquier momento, y los datos se pueden almacenar en ubicaciones no contiguas, no hay garantía de que los arrays de JavaScript sean densos; esto depende de cómo el programador elija usarlos. En general estas características son cómodas, pero si, en su caso particular, no resultan deseables, puede considerar el uso de arrays con tipo.
+            </p>
+      
+            <p>
+              El objeto Array de JavaScript es un objeto global que es usado en la construcción de arrays, que son objetos tipo lista de alto nivel.
+            </p>
+            <ul>
+              <li>
+              "tipo-almacenamiento" se refiere al tipo de almacenamiento del array
+              </li>
+              <li>
+              "tipo-dato" es el tipo de dato
+              </li>
+              <li>
+                "array" es el nombre del array
+                </li>
+                <li>
+                "expresion" una expresión entera positiva que indica el número de elementos del array.
+                </li>
+            </ul>
+          </article>
+        </section>
+        <section class="main-section" id="Operaciones_habituales">
+          <header>Operaciones habituales</header>
+          <article>
+            <p>Crear un Array</p>
+      
+            <ul>
+              <li>
+                Acceder a un elemento de Array mediante su índice.
+              </li>
+              <li>Recorrer un Array.</li>
+              <li>
+                Añadir un elemento al final de un Array.
+              </li>
+            </ul>
+          </article>
+        </section>
+        <section class="main-section" id="Acceso_a_elementos_de_un_array">
+          <header>Acceso a elementos de un array</header>
+          <article>
+            <p>
+              Los índices de los arrays de JavaScript comienzan en cero, es decir, el índice del primer elemento de un array es 0, y el del último elemento es igual al valor de la propiedad length del array restándole 1.              
+            </p>
+      
+            <p>
+              Si se utiliza un número de índice no válido, se obtendrá undefined.
+            </p>
+            <p>
+              Los elementos de un array pueden considerarse propiedades del objeto tanto como toString (sin embargo, para ser precisos, toString() es un método). Sin embargo, se obtendrá un error de sintaxis si se intenta acceder a un elemento de un array de la forma siguiente, ya que el nombre de la propiedad no sería válido:
+            </p>
+          </article>
+        </section>
+        <section class="main-section" id="Relación_entre_length_y_las_propiedades_numéricas">
+          <header>Relación entre length y las propiedades numéricas</header>
+          <article>
+            La propiedad length de un array de JavaScript está conectada con algunas otras de sus propiedades numéricas.
+            Varios de los métodos propios de un array (p. ej., join(), slice(), indexOf(), etc.) tienen en cuenta el valor de la propiedad length de un array cuando se les llama.            
+            Otros métodos (p. ej., push(), splice(), etc.) modifican la propiedad length de un array.
+              <p>
+            Cuando se le da a una propiedad de un array JavaScript un valor que corresponda a un índice válido para el array pero que se encuentre fuera de sus límites, el motor actualizará el valor de la propiedad length como corresponda:
+            </p>
+          </article>
+        </section>
+        <section class="main-section" id="Creación_de_un_array_a_partir_de_una_expresión_regular">
+          <header>Creación de un array a partir de una expresión regular</header>
+          <p>
+            El resultado de una búsqueda con una RegExp en un string puede crear un array de JavaScript. Este array tendrá propiedades y elementos que proporcionan información sobre la correspondencia encontrada. Para obtener un array de esta forma puede utilizarse RegExp.exec(), String.match() o String.replace().
+          </p>
+          <p>
+            El siguiente ejemplo, y la tabla que le sigue, pueden ayudar a comprender mejor las propiedades y elementos a los que nos referimos:
+          </p>
+        </section>
+        <section class="main-section" id="Declaracion_de_variables">
+          <header>Declaracion de variables</header>
+          <article>
+            Los arrays automáticos a diferencia de las variables automáticas no pueden ser inicializados. Sin embargo las definiciones de los arrays estáticos y externos pueden incluir, si se desea, la asignación de los valores iniciales. 
+            <p>
+              Los valores iniciales deben aparecer en el orden en que serán asignados a los elementos individuales del array, encerrados entre llaves y separados por comas.
+            </p>
+            <p>
+              La forma general es:
+            </p>
+            <p>
+            tipo-almacenamiento tipo-dato array[expresión] = { valor1, valor2,..., valorn};
+            </p>
+            <p>donde:</p><ul>
+              <li>"valor1" se refiere al valor del primer elemento del array</li>
+              <li>"valor2" al segundo elemento , y así sucesivamente.</li>
+              <li>La presencia de la "expresión", que indica el número de elementos del array, es opcional cuando los valores iniciales están presentes.</li>
+            </ul>
+          </article>
+        </section>
+
+        <section class="main-section" id="referencia">
+          <header>Referencia</header>
+          <article>
+            <ul>
+              <li>
+                la documentación en esta página está tomada de
+                <a
+                  href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide"
+                  target="_blank"
+                  >MDN</a
+                >
+              </li>
+              <li>
+                
+                <a
+                  href="http://decsai.ugr.es/~jfv/ed1/c/cdrom/cap5/f_cap52.htm"
+                  target="_blank"
+                  >Definición de un Array. - Proyecto: Sistema de ayuda al C.</a
+                >
+              </li>
+            </ul>
+          </article>
+        </section>
+      </main>
+    </div>
+    <footer>
+      <div id="copyright">
+        Copyright &copy; 2020 - Página creada por Hery - Todos los derechos
+        reservados
+      </div>
+    </footer>
+      
+    
+</body>
+</html>
