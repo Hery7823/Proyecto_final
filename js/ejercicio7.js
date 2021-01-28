@@ -7,7 +7,7 @@ var resul=document.getElementById("resultado");
 let numero = 0;
 let encontrado = 0;
 
-for (let index = 0; index < 20 ; index++) 
+for (let index = 0; index < 10 ; index++) 
 {
     numeros[index] = Math.round( Math.random() * (20));
 }
@@ -16,7 +16,7 @@ numero = Number(prompt("Por favor adivine un numero del 0 al 20"));
 
 //Imprimir
 
-for (let index = 0; index < 20 ; index++) 
+for (let index = 0; index < 10 ; index++) 
 {
     
     if( numero == numeros[index] )
@@ -34,7 +34,7 @@ for (let index = 0; index < 20 ; index++)
 } 
 
 
-for (let index = 0; index < 20 ; index++) 
+for (let index = 0; index < 10 ; index++) 
 {
     resul.innerHTML +=numeros[index]+"<br>";   
 }

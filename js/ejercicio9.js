@@ -1,6 +1,6 @@
 "use strict";
 
-var anacleto = new Array(); //Objeto
+var lista_Nombres = ['Anacleto','Valloleidys','Temistocles']; //Objeto
 var tipoVenta = new Array(); //Objeto
 var valorVenta = new Array(); //Objeto
 let contador = 0;
@@ -9,10 +9,20 @@ let sumatoria15 = 0;
 let sumatoria10 = 0;
 let sumatoria5 = 0;
 let sumatorias = 0;
+let codigo;
 
 
 var resul = document.getElementById("resultado");
-alert("Registro de Ventas Anacleto");
+for (;;) {
+  codigo=Number(prompt('Ingrese codigo de mesero'))
+  if (codigo === 0 || codigo === 1 || codigo === 2) {
+    break;
+  } else{
+    alert('codigo de mesero no Valido')
+  }
+  
+}
+
 
 for (;;) 
 {
@@ -48,7 +58,7 @@ sumatorias = (sumatoria15 + sumatoria10 + sumatoria5) * 1.07;
 
 
 
-resul.innerHTML += "Anacleto => comisiones totales: " + sumatorias.toFixed(2) +"<br>";
+resul.innerHTML += lista_Nombres[codigo]+" => comisiones totales: " + sumatorias.toFixed(2) +"<br>";
 
 
 

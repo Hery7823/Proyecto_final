@@ -1,6 +1,6 @@
 ﻿'use strict'
 
-var arryNumeroUno = new Array(5); //Objeto
+var arryNumeroUno = new Array(2); //Objeto
 var arryNumeroDos = new Array(); //Objeto
 
 
@@ -8,7 +8,7 @@ var arryNumeroDos = new Array(); //Objeto
 
 for (let index = 0; index < arryNumeroUno.length; index++) 
 {
-    arryNumeroUno[index] = Number(prompt("#: "+(index + 1)+" Por favor ingrese 5 numeros"))
+    arryNumeroUno[index] = Number(prompt("Por favor ingrese 2 numeros"))
 }
 
 for (let index = 0; index < arryNumeroUno.length; index++) 

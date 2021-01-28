@@ -1,6 +1,6 @@
 
 
-var NumeroEntero = new Array(100); //Objeto
+var NumeroEntero = new Array(10); //Objeto
 
 
 for (let index = 0; index < NumeroEntero.length; index++) {

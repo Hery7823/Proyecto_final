@@ -1,24 +1,17 @@
 'use strict'
 
-var arryNumeroUno = new Array(5); //Objeto
-var arryNumeroDos = new Array(5); //Objeto
+var arryNumeroUno = new Array(1); //Objeto
+var arryNumeroDos = new Array(1); //Objeto
 var arryNumeroTres = new Array(); //Objeto
-var numerosElegidos = 0;
-
-function agregarNumeros(numerosElegidos) {
-    var num = numerosElegidos
-    return num;
-}
-
 
 
 for (let index = 0; index < arryNumeroUno.length; index++) 
 {
-    arryNumeroUno[index] = agregarNumeros(); //Number(prompt("#: "+(index + 1)+" Por favor ingrese 10 numeros"))
+    arryNumeroUno[index] = Number(prompt("Ejercicio 3: Por favor ingrese un numero para el Array n° 1"));
 }
 for (let index = 0; index < arryNumeroDos.length; index++) 
 {
-    arryNumeroDos[index] ;//Number(prompt("#: "+(index + 6)+" Por favor ingrese 10 numeros"))
+    arryNumeroDos[index] = Number(prompt("Ejercicio 3: Por favor ingrese un numero para el Array n° 2"));
 }
 
 //Imprimir
@@ -27,17 +20,9 @@ arryNumeroTres = arryNumeroUno.concat(arryNumeroDos);
 
 var resul=document.getElementById("resultado");
 
-resul.innerHTML ="Numeros Ingresados"+"<br/>"+"<br/>"; 
+resul.innerHTML ="Numeros Ingresados para el Array n° 3 "+"<br/>"+"<br/>"; 
 
 for(let index = 0; index < arryNumeroTres.length; index++)
 {
     resul.innerHTML +="número: " + arryNumeroTres[index] +"<br/>"; 
 }
-
-const gallery = document.getElementById('gallery');
-gallery.addEventListener('click', (e)=>{
-    numerosElegidos = Number(e.target.textContent);
-    console.log(agregarNumeros(numerosElegidos))
-    
-})
-
